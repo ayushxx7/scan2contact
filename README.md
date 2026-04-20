@@ -8,21 +8,7 @@
 
 **scan2contact** is a modern Next.js application that leverages OCR technology to surgically extract contact details from business cards or physical images and convert them into structured digital contacts.
 
-## 🎬 Showcase Gallery
-| 🏠 Scan Interface | 📊 Extracted Results |
-| :---: | :---: |
-| ![Scan](https://raw.githubusercontent.com/ayushxx7/scan2contact/main/showcase/scan.png) | ![Result](https://raw.githubusercontent.com/ayushxx7/scan2contact/main/showcase/result.png) |
-
-## 📊 Repo Health: 88 / 100 (High Readiness)
-This project is a high-utility tool for digital networking and asset management.
-
-| Category | Item | Status | Score |
-| :--- | :--- | :--- | :--- |
-| **Documentation** | README & LICENSE | ✅ Updated | 15 / 15 |
-| **Security** | API Secret Handling | ✅ Secure | 15 / 15 |
-| **Automation** | Next.js Lifecycle | ✅ Working | 18 / 20 |
-| **Showcase** | UI Screenshots | ⚠️ Pending | 10 / 20 |
-| **Distribution** | Vercel Deployment Ready | ✅ Active | 30 / 30 |
+`✅ Smart OCR Extraction | ✅ Next.js Serverless | ✅ MIT Licensed | ✅ VCard/Firebase Export`
 
 ## 🏗 Architecture
 The application uses a serverless Next.js architecture, delegating heavy OCR lifting to external providers while managing state locally.
