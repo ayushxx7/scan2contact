@@ -4,11 +4,13 @@
 [![Tested on Gemini](https://img.shields.io/badge/Tested_on-Gemini_CLI-8E44AD?style=for-the-badge&logo=google-gemini&logoColor=white)](https://github.com/google/gemini-cli)
 [![Tech Stack: Next.js](https://img.shields.io/badge/Next.js-15+-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![OCR: OCR.Space](https://img.shields.io/badge/OCR-OCR.Space-blue?style=for-the-badge)](https://ocr.space/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 **scan2contact** is a modern Next.js application that leverages OCR technology to surgically extract contact details from business cards or physical images and convert them into structured digital contacts.
 
 `✅ Smart OCR Extraction | ✅ Next.js Serverless | ✅ MIT Licensed | ✅ VCard/Firebase Export`
+
+## 🎬 UI Preview
+![UI Preview](showcase/ui_preview.svg)
 
 ## 🏗 Architecture
 The application uses a serverless Next.js architecture, delegating heavy OCR lifting to external providers while managing state locally.
@@ -24,38 +26,27 @@ graph LR
 ```
 
 ### Core Components
-- **Frontend (`app/`)**: Modern React components for image upload, preview, and results rendering.
-- **OCR Logic (`lib/ocr.ts`)**: Surgical integration with OCR.Space API for high-accuracy text extraction.
-- **Parsing Engine**: Intelligent regex-based logic to identify names, emails, and phone numbers from raw OCR text.
-- **Persistence Layer**: Firebase integration for storing and syncing extracted contacts across devices.
+- **Frontend (`app/`)**: Modern React components for image upload, camera preview, and results rendering.
+- **OCR Logic (`lib/ocr.ts`)**: Surgical integration with OCR.Space API for text extraction.
+- **Parsing Engine**: Intelligent regex-based logic to identify names, emails, and phone numbers.
+- **Persistence**: Firebase integration for storing and syncing extracted contacts.
 
-## 🔧 Setup Instructions
+## 🚀 Getting Started
 
-### 1. Environment Variables
+1. **Environment Variables**:
+   Create a `.env` file:
+   ```env
+   OCR_SPACE_API_KEY=your_key
+   ```
 
-You need to provide an OCR API key for the app to function:
+2. **Install & Run**:
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-#### Option A: Export via shell
+## 📜 License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-`export OCR_SPACE_API_KEY="your_api_key_here"`
-
-Option B: Use a .env file
-
-Create a .env file in the root directory and add:
-
-`OCR_SPACE_API_KEY=your_api_key_here`
-
-2. Firebase Configuration
-
-Update the Firebase-related environment variables as per the credentials provided. You can place them in the same lib/firebase.t file.
-🚀 Getting Started
-
-Install dependencies and start the development server:
-
-`npm install       # Install all dependencies`
-
-`npm run dev       # Start the development server`
-
-Open your browser and navigate to:
-
-http://localhost:3000/
+---
+*Built with ❤️ for Digital Networking.*
